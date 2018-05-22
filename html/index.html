@@ -3,6 +3,7 @@
   <head>
     <title>Trial day</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
   </head>
@@ -15,14 +16,28 @@
         <img src="../img/header/logo/logo_i.png" alt="Logo">
         <img src="../img/header/logo/logo_i2.png" alt="Logo">
       </div>
+      <div class="nav-navbar-container">
+        <div class="nav-links-container">
+          <a href="" class="nav-link">portfolio</a>
+          <a class="nav-link">iroda</a>
+          <a class="nav-link">kapcsolat</a>
+        </div>
+        <div class="nav-language-container">
+          <a class="nav-link">hu</a>
+          <a class="nav-link">en</a>
+        </div>
+      </div>
     </div>
   </header>
   <body>
     <div class="main-container">
-      <div class="section-1-swiper-placeholder"></div>
+      <button onclick="Swiper.nextSlide()">next</button>
+      <div id="swiper"></div>
+      <button onclick="Swiper.prevSlide()">prev</button>
       <div class="section-2-text"></div>
       <div class="section-3-text-cards"></div>
       <div class="section-4-galery"></div>
     </div>
   </body>
+  <script src="../js/swiper.js"></script>
 </html>

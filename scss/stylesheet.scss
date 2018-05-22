@@ -1,17 +1,25 @@
+a {
+  text-decoration: none;
+}
+
 .nav-container {
-  width: 100vw;
+  display: flex;
+  justify-content: space-between;
   height: 90px;
-  background-color: tomato;
+  width: 100vw;
 }
 
 .main-container {
   width: 100vw;
   min-height: calc(100vh - 90px);
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo-container {
+  display: inline-block;
+  height: 41px;
   margin-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 
 .nav-logo {
@@ -20,22 +28,34 @@
   height: 41px;
 }
 
-.nav-logo-letter-1 {
-  background-image: url("../img/header/logo/logo_m.png");
+.nav-navbar-container {
+  margin-right: 70px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.nav-logo-letter-2 {
-  background-image: url("../img/header/logo/logo_y.png");
+.nav-links-container  {
+  display: inline-block;
+  margin-right: 27px;
 }
 
-.nav-logo-letter-3 {
-  background-image: url("../img/header/logo/logo_d.png");
+.nav-language-container {
+  display: inline-block;
 }
 
-.nav-logo-letter-4 {
-  background-image: url("../img/header/logo/logo_i.png");
+.nav-link {
+  color: #808184;
+  line-height: 90px;
+  margin-right: 62px;
+  text-transform: uppercase;
 }
 
-.nav-logo-letter-5 {
-  background-image: url("../img/header/logo/logo_i2.png");
+.section-1-swiper-placeholder {
+  background-image: url("../img/top_swiper/top_swiper_placeholder.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 50.1%;
+  width: 100%;
 }
