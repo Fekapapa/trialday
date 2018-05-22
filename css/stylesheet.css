@@ -1,0 +1,43 @@
+.nav-container {
+  width: 100vw;
+  height: 90px;
+  background-color: tomato;
+}
+
+.main-container {
+  width: 100vw;
+  min-height: calc(100vh - 90px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo-container {
+  margin-left: 50px;
+}
+
+.nav-logo {
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 41px;
+}
+
+.nav-logo-letter-1 {
+  background-image: url("../img/header/logo/logo_m.png");
+}
+
+.nav-logo-letter-2 {
+  background-image: url("../img/header/logo/logo_y.png");
+}
+
+.nav-logo-letter-3 {
+  background-image: url("../img/header/logo/logo_d.png");
+}
+
+.nav-logo-letter-4 {
+  background-image: url("../img/header/logo/logo_i.png");
+}
+
+.nav-logo-letter-5 {
+  background-image: url("../img/header/logo/logo_i2.png");
+}
+
+/*# sourceMappingURL=css/stylesheet.css.map */
