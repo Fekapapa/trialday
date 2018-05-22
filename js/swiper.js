@@ -15,6 +15,25 @@ const Swiper = (function() {
   swiper.style.overflow = 'hidden';
   swiper.style.position = 'relative';
 
+  const prevButton = document.createElement('button');
+  prevButton.onclick = prevSlide;
+  prevButton.innerHTML = 'prev';
+  prevButton.style.position = 'absolute';
+  prevButton.style.top = '50%';
+  prevButton.style.transform = 'translateY(50%)';
+  prevButton.style.zIndex = 1;
+  swiperContainer.appendChild(prevButton);
+
+  const nextButton = document.createElement('button');
+  nextButton.onclick = nextSlide;
+  nextButton.innerHTML = 'next';
+  nextButton.style.position = 'absolute';
+  nextButton.style.top = '50%';
+  nextButton.style.right = 0;
+  nextButton.style.transform = 'translateY(50%)';
+  nextButton.style.zIndex = 1;
+  swiperContainer.appendChild(nextButton);
+
   //The slides inside the swiper.
   const slidesContainer = document.createElement('div');
   slidesContainer.style.display = 'flex';
