@@ -39,10 +39,9 @@ const Swiper = (function() {
   getJsonData('../json_data/swiper_slides.json', function(response) {
     let swiperslides = response;
     swiperInit(swiperslides);
-    console.log(swiperslides);
   });
 
-  //Initinating the sipwer slides from the json data.
+  //Initiating the sipwer slides from the json data.
   function swiperInit(swiperslides) {
     for (let slide in swiperslides) {
       const oneSlide = document.createElement("div");
@@ -56,6 +55,7 @@ const Swiper = (function() {
 
       slidesNumber += 1;
     }
+    console.log('Swiper initiated with the data:', swiperslides);
   }
 
   //Calling the next slide with this function.
@@ -75,6 +75,7 @@ const Swiper = (function() {
   }
 
   return {
+    //call these functions from the html or js to make the swiper slide next/prev.
     nextSlide: nextSlide,
     prevSlide: prevSlide
   }
